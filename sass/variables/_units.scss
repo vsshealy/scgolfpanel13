@@ -31,12 +31,12 @@
     // MARGINS
         $margin-none: $margin-base * 0.00;
         $margin-xxs: $margin-base * 0.50;
-        $margin-xs: $margin-base * 1.00;
-        $margin-sm: $margin-base * 2.00;
-        $margin-md: $margin-base * 4.00;
-        $margin-lg: $margin-base * 6.00;
-        $margin-xl: $margin-base * 8.00;
-        $margin-xxl: $margin-base * 10.00;
+        $margin-xs: $margin-base * 0.75;
+        $margin-sm: $margin-base * 1.00;
+        $margin-md: $margin-base * 2.00;
+        $margin-lg: $margin-base * 3.00;
+        $margin-xl: $margin-base * 5.00;
+        $margin-xxl: $margin-base * 7.00;
 
 // PADDINGS
     // PADDING-BASE
@@ -45,9 +45,9 @@
     // PADDINGS
         $padding-none: $padding-base * 0.00;
         $padding-xxs: $padding-base * 0.50;
-        $padding-xs: $padding-base * 1.00;
-        $padding-sm: $padding-base * 2.00;
-        $padding-md: $padding-base * 4.00;
-        $padding-lg: $padding-base * 6.00;
-        $padding-xl: $padding-base * 8.00;
-        $padding-xxl: $padding-base * 10.00;
+        $padding-xs: $padding-base * 0.75;
+        $padding-sm: $padding-base * 1.00;
+        $padding-md: $padding-base * 2.00;
+        $padding-lg: $padding-base * 3.00;
+        $padding-xl: $padding-base * 5.00;
+        $padding-xxl: $padding-base * 7.00;
