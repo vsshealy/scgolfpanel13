@@ -89,6 +89,7 @@
             @import "layouts/clearfix";
             @import "layouts/devices";
             @import "layouts/flexbox";
+            @import "layouts/grids";
             @import "layouts/wrappers";
             @import "objects/images";
             @import "objects/videos";
@@ -109,6 +110,7 @@
             // SETTINGS
                 $button-color: $link-color;
                 $button-font: $body-text;
+                $button-padding: $padding-xxs $padding-md;
 
             // @IMPORT | FILES
                 @import "objects/buttons";
@@ -128,5 +130,40 @@
 
         // GRADIENTS
             // SETTINGS
+                $gradient-hero: linear-gradient(0deg, rgba($color-grayscale-dark-9, 0.95) 0.00%, rgba($color-grayscale-dark-9, 0.85) 50.00%, rgba($color-scgolfpanel-blue-dark-9, 0.50) 100.00%);
+
             // @IMPORT | FILES
                 @import "objects/gradients";
+
+// EXTERNAL SETTINGS
+    // BOOTSTRAP
+        // SETTINGS
+        // @IMPORT | FILES
+            @import "external/bootstrap";
+
+    // ELEMENTOR
+        // SETTINGS
+        // @IMPORT | FILES
+            @import "external/elementor";
+
+// PARTS
+    // HEADER
+        // SETTINGS
+        // @IMPORT | FILES
+            @import "parts/header/main";
+            @import "parts/header/files/header-off-canvas-menu";
+
+    // FOOTER
+        // SETTINGS
+            footer {display: none !important;}
+        // @IMPORT | FILES
+            @import "parts/footer/main";
+
+    // HEROES
+        // SETTINGS
+            $hero-home-height: 100.00vh;
+            $hero-subpage-height: 40.00vh;
+            $hero-gradient: $gradient-hero;
+
+        // @IMPORT | FILES
+            @import "parts/heroes/main";

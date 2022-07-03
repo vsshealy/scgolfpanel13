@@ -1,0 +1,66 @@
+/**
+ * sass/parts/heroes/files/hero-subpage.scss
+ * @package scgolfpanel
+ * @author Scott Shealy
+ * @version 1.0.0
+ * @copyright 2022
+**/
+
+&-subpage {
+    // GLOBAL
+        height: $hero-subpage-height;
+        min-height: $hero-subpage-height;
+        max-height: $hero-subpage-height;
+        background-size: cover;
+        background-repeat: no-repeat;
+
+    // MOBILE
+        @media #{$screen-xs} {} //.COL-XS
+        @media #{$screen-sm} {} //.COL-SM
+        @media #{$screen-md} {} //.COL-MD
+        @media #{$device-mobile} {} //.MOBILE
+
+    // DESKTOP
+        @media #{$device-desktop} {} //.DESKTOP
+        @media #{$screen-lg} {} //.COL-LG
+        @media #{$screen-xl} {} //.COL-XL
+        @media #{$screen-xxl} {} //.COL-XXL
+
+    .elementor-background-overlay {
+        // GLOBAL
+            background: rgba($color-grayscale-dark-9, 0.80);
+            background: $hero-gradient;
+            opacity: 1.00 !important;
+
+        // MOBILE
+            @media #{$screen-xs} {} //.COL-XS
+            @media #{$screen-sm} {} //.COL-SM
+            @media #{$screen-md} {} //.COL-MD
+            @media #{$device-mobile} {} //.MOBILE
+
+        // DESKTOP
+            @media #{$device-desktop} {} //.DESKTOP
+            @media #{$screen-lg} {} //.COL-LG
+            @media #{$screen-xl} {} //.COL-XL
+            @media #{$screen-xxl} {} //.COL-XXL
+    } //.ELEMENTOR-BACKGROUND-OVERLAY
+
+    & > .elementor-container {
+        // GLOBAL
+            height: 100.00%;
+            width: 100.00%;
+            
+        // MOBILE
+            @media #{$screen-xs} {} //.COL-XS
+            @media #{$screen-sm} {} //.COL-SM
+            @media #{$screen-md} {} //.COL-MD
+            @media #{$device-mobile} {} //.MOBILE
+
+        // DESKTOP
+            @media #{$device-desktop} {} //.DESKTOP
+            @media #{$screen-lg} {} //.COL-LG
+            @media #{$screen-xl} {} //.COL-XL
+            @media #{$screen-xxl} {} //.COL-XXL
+    } //.ELEMENTOR-CONTAINER
+
+} //.HERO-SUBPAGE
