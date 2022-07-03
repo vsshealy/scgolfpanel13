@@ -83,8 +83,8 @@
         // CONTENT
             @media #{$content-width-sm} {
                 width: 100.00%;
-                padding-left: $body-mobile-gutter;
-                padding-right: $body-mobile-gutter;
+                padding-left: $padding-md;
+                padding-right: $padding-md;
             } //.CONTENT-WIDTH-SM
 
             @media #{$content-width-lg} {

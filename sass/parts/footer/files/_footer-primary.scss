@@ -1,13 +1,17 @@
 /**
- * sass/parts/header/files/header-primary.scss
+ * sass/parts/footer/files/footer-primary.scss
  * @package scgolfpanel
  * @author Scott Shealy
  * @version 1.0.0
  * @copyright 2022
 **/
 
-#header-primary {
+#footer-primary {
     // GLOBAL
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+
     // MOBILE
         @media #{$screen-xs} {} //.COL-XS
         @media #{$screen-sm} {} //.COL-SM
@@ -22,6 +26,10 @@
 
     .elementor-background-overlay {
         // GLOBAL
+            background: rgba($color-scgolfpanel-green, 0.90);
+            background: linear-gradient(0deg, rgba($color-scgolfpanel-green-dark-6, 0.95) 0.00%, rgba($color-scgolfpanel-green-dark-4, 0.85) 50.00%, rgba($color-scgolfpanel-green-0, 0.50) 100.00%);
+            opacity: 1.00;
+
         // MOBILE
             @media #{$screen-xs} {} //.COL-XS
             @media #{$screen-sm} {} //.COL-SM
@@ -51,14 +59,13 @@
 
         & > .wrapper-content {
             // GLOBAL
-                padding: $padding-sm;
+                padding-top: $padding-md;
+                padding-bottom: $padding-md;
 
             // MOBILE
                 @media #{$screen-xs} {} //.COL-XS
                 @media #{$screen-sm} {} //.COL-SM
-                @media #{$screen-md} {
-                    padding: $padding-md;
-                } //.COL-MD
+                @media #{$screen-md} {} //.COL-MD
                 @media #{$device-mobile} {} //.MOBILE
 
             // DESKTOP
@@ -69,14 +76,10 @@
 
             & > .elementor-widget-wrap {
                 // GLOBAL
-                    padding: $padding-sm !important;
-
                 // MOBILE
                     @media #{$screen-xs} {} //.COL-XS
                     @media #{$screen-sm} {} //.COL-SM
-                    @media #{$screen-md} {
-                        padding: $padding-md !important;
-                    } //.COL-MD
+                    @media #{$screen-md} {} //.COL-MD
                     @media #{$device-mobile} {} //.MOBILE
 
                 // DESKTOP
@@ -84,10 +87,6 @@
                     @media #{$screen-lg} {} //.COL-LG
                     @media #{$screen-xl} {} //.COL-XL
                     @media #{$screen-xxl} {} //.COL-XXL
-
-                // CONTENT
-                    @media #{$content-width-sm} {} //.CONTENT-WIDTH-SM
-                    @media #{$content-width-lg} {} //.CONTENT-WIDTH-LG
 
                 & > .elementor-section.row {
                     // GLOBAL
@@ -119,6 +118,9 @@
 
                         & > .elementor-column.columns {
                             // GLOBAL
+                                flex-direction: column;
+                                justify-content: center;
+
                             // MOBILE
                                 @media #{$screen-xs} {} //.COL-XS
                                 @media #{$screen-sm} {} //.COL-SM
@@ -130,70 +132,16 @@
                                 @media #{$screen-lg} {} //.COL-LG
                                 @media #{$screen-xl} {} //.COL-XL
                                 @media #{$screen-xxl} {} //.COL-XXL
-                        } //.ELEMENTOR-COLUMN.COLUMNS
+                        } //.ELEMENTOR-COLUMNS.COLUMNS
                     } //.ELEMENTOR-CONTAINER
                 } //.ELEMENTOR-SECTION.ROW
             } //.ELEMENTOR-WIDGET-WRAP
-        } //.ELEMENTOR-COLUMN
+        } //.WRAPPER-CONTENT
     } //.ELEMENTOR-CONTAINER
 
-    #header-logo {
+    #{$text-all} {
         // GLOBAL
-            width: $grid-5;
-            display: flex;
-
-        // MOBILE
-            @media #{$screen-xs} {} //.COL-XS
-            @media #{$screen-sm} {
-                width: $grid-4;
-            } //.COL-SM
-            @media #{$screen-md} {
-                width: $grid-3;
-            } //.COL-MD
-            @media #{$device-mobile} {} //.MOBILE
-
-        // DESKTOP
-            @media #{$device-desktop} {} //.DESKTOP
-            @media #{$screen-lg} {} //.COL-LG
-            @media #{$screen-xl} {
-                width: $grid-2;
-            } //.COL-XL
-            @media #{$screen-xxl} {} //.COL-XXL
-
-        a {
-            // GLOBAL
-            // MOBILE
-                @media #{$screen-xs} {} //.COL-XS
-                @media #{$screen-sm} {} //.COL-SM
-                @media #{$screen-md} {} //.COL-MD
-                @media #{$device-mobile} {} //.MOBILE
-
-            // DESKTOP
-                @media #{$device-desktop} {} //.DESKTOP
-                @media #{$screen-lg} {} //.COL-LG
-                @media #{$screen-xl} {} //.COL-XL
-                @media #{$screen-xxl} {} //.COL-XXL
-
-            img {
-                // GLOBAL
-                // MOBILE
-                    @media #{$screen-xs} {} //.COL-XS
-                    @media #{$screen-sm} {} //.COL-SM
-                    @media #{$screen-md} {} //.COL-MD
-                    @media #{$device-mobile} {} //.MOBILE
-
-                // DESKTOP
-                    @media #{$device-desktop} {} //.DESKTOP
-                    @media #{$screen-lg} {} //.COL-LG
-                    @media #{$screen-xl} {} //.COL-XL
-                    @media #{$screen-xxl} {} //.COL-XXL
-            } //IMG
-        } //A
-    } //#HEADER-LOGO
-
-    #header-nav {
-        // GLOBAL
-            display: none;
+            color: $color-grayscale-light-12;
 
         // MOBILE
             @media #{$screen-xs} {} //.COL-XS
@@ -204,13 +152,172 @@
         // DESKTOP
             @media #{$device-desktop} {} //.DESKTOP
             @media #{$screen-lg} {} //.COL-LG
-            @media #{$screen-xl} {
-                width: $grid-10;
-                display: flex;
-            } //.COL-XL
+            @media #{$screen-xl} {} //.COL-XL
+            @media #{$screen-xxl} {} //.COL-XXL
+    } //.TEXT-ALL
+
+    #{$text-headings-all} {
+        // GLOBAL
+        // MOBILE
+            @media #{$screen-xs} {} //.COL-XS
+            @media #{$screen-sm} {} //.COL-SM
+            @media #{$screen-md} {} //.COL-MD
+            @media #{$device-mobile} {} //.MOBILE
+
+        // DESKTOP
+            @media #{$device-desktop} {} //.DESKTOP
+            @media #{$screen-lg} {} //.COL-LG
+            @media #{$screen-xl} {} //.COL-XL
+            @media #{$screen-xxl} {} //.COL-XXL
+    } //.TEXT-HEADINGS-ALL
+
+    #{$text-body-all} {
+        // GLOBAL
+        // MOBILE
+            @media #{$screen-xs} {} //.COL-XS
+            @media #{$screen-sm} {} //.COL-SM
+            @media #{$screen-md} {} //.COL-MD
+            @media #{$device-mobile} {} //.MOBILE
+
+        // DESKTOP
+            @media #{$device-desktop} {} //.DESKTOP
+            @media #{$screen-lg} {} //.COL-LG
+            @media #{$screen-xl} {} //.COL-XL
+            @media #{$screen-xxl} {} //.COL-XXL
+    } //.TEXT-BODY-ALL
+
+    #{$text-links-all} {
+        // GLOBAL
+        // MOBILE
+            @media #{$screen-xs} {} //.COL-XS
+            @media #{$screen-sm} {} //.COL-SM
+            @media #{$screen-md} {} //.COL-MD
+            @media #{$device-mobile} {} //.MOBILE
+
+        // DESKTOP
+            @media #{$device-desktop} {} //.DESKTOP
+            @media #{$screen-lg} {} //.COL-LG
+            @media #{$screen-xl} {} //.COL-XL
+            @media #{$screen-xxl} {} //.COL-XXL
+    } //.TEXT-LINKS-ALL
+
+    #footer-logo {
+        // GLOBAL
+            margin-bottom: $margin-sm;
+
+        // MOBILE
+            @media #{$screen-xs} {} //.COL-XS
+            @media #{$screen-sm} {} //.COL-SM
+            @media #{$screen-md} {
+                margin-bottom: $margin-none;
+            } //.COL-MD
+            @media #{$device-mobile} {} //.MOBILE
+
+        // DESKTOP
+            @media #{$device-desktop} {} //.DESKTOP
+            @media #{$screen-lg} {} //.COL-LG
+            @media #{$screen-xl} {} //.COL-XL
             @media #{$screen-xxl} {} //.COL-XXL
 
-        nav.elementor-nav-menu--main {
+        & > .elementor-widget-wrap {
+            // GLOBAL
+                justify-content: center;
+
+            // MOBILE
+                @media #{$screen-xs} {} //.COL-XS
+                @media #{$screen-sm} {} //.COL-SM
+                @media #{$screen-md} {
+                    justify-content: flex-start;
+                } //.COL-MD
+                @media #{$device-mobile} {} //.MOBILE
+
+            // DESKTOP
+                @media #{$device-desktop} {} //.DESKTOP
+                @media #{$screen-lg} {} //.COL-LG
+                @media #{$screen-xl} {} //.COL-XL
+                @media #{$screen-xxl} {} //.COL-XXL
+
+            & > .elementor-widget-theme-site-logo {
+                // GLOBAL
+                    width: $grid-6;
+
+                // MOBILE
+                    @media #{$screen-xs} {} //.COL-XS
+                    @media #{$screen-sm} {} //.COL-SM
+                    @media #{$screen-md} {
+                        width: $grid-12;
+                    } //.COL-MD
+                    @media #{$device-mobile} {} //.MOBILE
+
+                // DESKTOP
+                    @media #{$device-desktop} {} //.DESKTOP
+                    @media #{$screen-lg} {} //.COL-LG
+                    @media #{$screen-xl} {} //.COL-XL
+                    @media #{$screen-xxl} {} //.COL-XXL
+            } //.ELEMENTOR-WIDGET-THEME-SITE-LOGO
+        } //.ELEMENTOR-WIDGET-WRAP
+    } //#FOOTER-LOGO
+
+    #footer-title {
+        // GLOBAL
+            margin-bottom: $margin-sm;
+
+        // MOBILE
+            @media #{$screen-xs} {} //.COL-XS
+            @media #{$screen-sm} {} //.COL-SM
+            @media #{$screen-md} {
+                margin-bottom: $margin-none;
+            } //.COL-MD
+            @media #{$device-mobile} {} //.MOBILE
+
+        // DESKTOP
+            @media #{$device-desktop} {} //.DESKTOP
+            @media #{$screen-lg} {} //.COL-LG
+            @media #{$screen-xl} {} //.COL-XL
+            @media #{$screen-xxl} {} //.COL-XXL
+
+        #{$text-headings-all} {
+            // GLOBAL
+                margin: $margin-none;
+                text-align: center;
+
+            // MOBILE
+                @media #{$screen-xs} {} //.COL-XS
+                @media #{$screen-sm} {} //.COL-SM
+                @media #{$screen-md} {
+                    text-align: left;
+                } //.COL-MD
+                @media #{$device-mobile} {} //.MOBILE
+
+            // DESKTOP
+                @media #{$device-desktop} {} //.DESKTOP
+                @media #{$screen-lg} {} //.COL-LG
+                @media #{$screen-xl} {} //.COL-XL
+                @media #{$screen-xxl} {} //.COL-XXL
+
+            // CONTENT
+                @media #{$content-width-sm} {} //.CONTENT-WIDTH-SM
+                @media #{$content-width-lg} {
+                    font-size: 3.00em;
+                } //.CONTENT-WIDTH-LG
+        } //.TEXT-HEADINGS-ALL
+    } //#FOOTER-TITLE
+
+    #footer-menu-primary {
+        // GLOBAL
+        // MOBILE
+            @media #{$screen-xs} {} //.COL-XS
+            @media #{$screen-sm} {} //.COL-SM
+            @media #{$screen-md} {} //.COL-MD
+            @media #{$device-mobile} {} //.MOBILE
+
+        // DESKTOP
+            @media #{$device-desktop} {} //.DESKTOP
+            @media #{$screen-lg} {} //.COL-LG
+            @media #{$screen-xl} {} //.COL-XL
+            @media #{$screen-xxl} {} //.COL-XXL
+
+        .elementor-widget-nav-menu {
             // GLOBAL
             // MOBILE
                 @media #{$screen-xs} {} //.COL-XS
@@ -223,22 +330,8 @@
                 @media #{$screen-lg} {} //.COL-LG
                 @media #{$screen-xl} {} //.COL-XL
                 @media #{$screen-xxl} {} //.COL-XXL
-
-            ul.elementor-nav-menu {
-                // GLOBAL
-                // MOBILE
-                    @media #{$screen-xs} {} //.COL-XS
-                    @media #{$screen-sm} {} //.COL-SM
-                    @media #{$screen-md} {} //.COL-MD
-                    @media #{$device-mobile} {} //.MOBILE
-
-                // DESKTOP
-                    @media #{$device-desktop} {} //.DESKTOP
-                    @media #{$screen-lg} {} //.COL-LG
-                    @media #{$screen-xl} {} //.COL-XL
-                    @media #{$screen-xxl} {} //.COL-XXL
-
-                li.menu-item {
+            
+                nav.elementor-nav-menu--main {
                     // GLOBAL
                     // MOBILE
                         @media #{$screen-xs} {} //.COL-XS
@@ -252,15 +345,8 @@
                         @media #{$screen-xl} {} //.COL-XL
                         @media #{$screen-xxl} {} //.COL-XXL
 
-                    a {
+                    ul.elementor-nav-menu {
                         // GLOBAL
-                            padding: $padding-xs $padding-sm;
-                            color: $color-grayscale-light-12;
-
-                            &:hover {
-                                background-color: $link-hover-color;
-                            } //:HOVER
-
                         // MOBILE
                             @media #{$screen-xs} {} //.COL-XS
                             @media #{$screen-sm} {} //.COL-SM
@@ -273,16 +359,18 @@
                             @media #{$screen-xl} {} //.COL-XL
                             @media #{$screen-xxl} {} //.COL-XXL
 
-                        &.elementor-item-active {
+                        li.menu-item {
                             // GLOBAL
-                                &::before {
-                                    background: $color-scgolfpanel-green-dark-3;
-                                } //::BEFORE
+                                display: flex;
+                                justify-content: center;
+                                margin: $margin-xs $margin-none;
 
                             // MOBILE
                                 @media #{$screen-xs} {} //.COL-XS
                                 @media #{$screen-sm} {} //.COL-SM
-                                @media #{$screen-md} {} //.COL-MD
+                                @media #{$screen-md} {
+                                    justify-content: flex-end;
+                                } //.COL-MD
                                 @media #{$device-mobile} {} //.MOBILE
 
                             // DESKTOP
@@ -290,85 +378,31 @@
                                 @media #{$screen-lg} {} //.COL-LG
                                 @media #{$screen-xl} {} //.COL-XL
                                 @media #{$screen-xxl} {} //.COL-XXL
-                        } //.ELEMENTOR-ITEM-ACTIVE
-                    } //A
 
-                    &.button-solid {
-                        // GLOBAL
-                            border: $border-outline;
+                            a.elementor-item {
+                                // GLOBAL
+                                    padding: $padding-none;
 
-                        // MOBILE
-                            @media #{$screen-xs} {} //.COL-XS
-                            @media #{$screen-sm} {} //.COL-SM
-                            @media #{$screen-md} {} //.COL-MD
-                            @media #{$device-mobile} {} //.MOBILE
+                                    &:hover {
+                                        font-weight: 700;
+                                    } //:HOVER
 
-                        // DESKTOP
-                            @media #{$device-desktop} {} //.DESKTOP
-                            @media #{$screen-lg} {} //.COL-LG
-                            @media #{$screen-xl} {} //.COL-XL
-                            @media #{$screen-xxl} {} //.COL-XXL
-                    } //.BUTTON-SOLID
-                } //.MENU-ITEM
-            } //.ELEMENTOR-NAV-MENU
-        } //.ELEMENTOR-NAV-MENU--MAIN
-    } //#HEADER-NAV
+                                // MOBILE
+                                    @media #{$screen-xs} {} //.COL-XS
+                                    @media #{$screen-sm} {} //.COL-SM
+                                    @media #{$screen-md} {} //.COL-MD
+                                    @media #{$device-mobile} {} //.MOBILE
 
-    #header-toggle {
-        // GLOBAL
-            width: $grid-7;
-            display: flex;
+                                // DESKTOP
+                                    @media #{$device-desktop} {} //.DESKTOP
+                                    @media #{$screen-lg} {} //.COL-LG
+                                    @media #{$screen-xl} {} //.COL-XL
+                                    @media #{$screen-xxl} {} //.COL-XXL
+                            } //.ELEMENTOR-ITEM
+                        } //.MENU-ITEM
+                    } //.ELEMENTOR-NAV-MENU
+                } //.ELEMENTOR-NAV-MENU--MAIN
+        } //.ELEMENTOR-WIDGET-NAV-MENU
+    } //#FOOTER-MENU-PRIMARY
 
-        // MOBILE
-            @media #{$screen-xs} {} //.COL-XS
-            @media #{$screen-sm} {
-                width: $grid-8;
-            } //.COL-SM
-            @media #{$screen-md} {
-                width: $grid-9;
-            } //.COL-MD
-            @media #{$device-mobile} {} //.MOBILE
-
-        // DESKTOP
-            @media #{$device-desktop} {} //.DESKTOP
-            @media #{$screen-lg} {} //.COL-LG
-            @media #{$screen-xl} {
-                display: none;
-            } //.COL-XL
-            @media #{$screen-xxl} {} //.COL-XXL
-
-        a {
-            // GLOBAL
-            // MOBILE
-                @media #{$screen-xs} {} //.COL-XS
-                @media #{$screen-sm} {} //.COL-SM
-                @media #{$screen-md} {} //.COL-MD
-                @media #{$device-mobile} {} //.MOBILE
-
-            // DESKTOP
-                @media #{$device-desktop} {} //.DESKTOP
-                @media #{$screen-lg} {} //.COL-LG
-                @media #{$screen-xl} {} //.COL-XL
-                @media #{$screen-xxl} {} //.COL-XXL
-
-            i {
-                // GLOBAL
-                    font-size: 0.75em;
-                    color: $color-grayscale-light-12;
-                    
-                // MOBILE
-                    @media #{$screen-xs} {} //.COL-XS
-                    @media #{$screen-sm} {} //.COL-SM
-                    @media #{$screen-md} {} //.COL-MD
-                    @media #{$device-mobile} {} //.MOBILE
-
-                // DESKTOP
-                    @media #{$device-desktop} {} //.DESKTOP
-                    @media #{$screen-lg} {} //.COL-LG
-                    @media #{$screen-xl} {} //.COL-XL
-                    @media #{$screen-xxl} {} //.COL-XXL
-            } //I
-        } //A
-    } //#HEADER-TOGGLE
-
-} //#HEADER-PRIMARY
+} //#FOOTER-PRIMARY
