@@ -1,17 +1,13 @@
 /**
- * sass/parts/header/main.scss
+ * sass/parts/banners/main.scss
  * @package scgolfpanel
  * @author Scott Shealy
  * @version 1.0.0
  * @copyright 2022
 **/
 
-header {
+.banner {
     // GLOBAL
-        width: 100.00%;
-        position: absolute !important;
-        z-index: 10;
-
     // MOBILE
         @media #{$screen-xs} {} //.COL-XS
         @media #{$screen-sm} {} //.COL-SM
@@ -25,6 +21,6 @@ header {
         @media #{$screen-xxl} {} //.COL-XXL
 
     // @IMPORT | FILES
-        @import "files/header-primary";
-
-} //HEADER
+        @import "files/banner-text";
+        
+} //.BANNER
