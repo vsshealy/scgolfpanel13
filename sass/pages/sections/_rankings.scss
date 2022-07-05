@@ -1,0 +1,75 @@
+/**
+ * sass/pages/sections/rankings.scss
+ * @package scgolfpanel
+ * @author Scott Shealy
+ * @version 1.0.0
+ * @copyright 2022
+**/
+
+section#rankings {
+    // GLOBAL
+    // MOBILE
+        @media #{$screen-xs} {} //.COL-XS
+        @media #{$screen-sm} {} //.COL-SM
+        @media #{$screen-md} {} //.COL-MD
+        @media #{$device-mobile} {} //.MOBILE
+
+    // DESKTOP
+        @media #{$device-desktop} {} //.DESKTOP
+        @media #{$screen-lg} {} //.COL-LG
+        @media #{$screen-xl} {} //.COL-XL
+        @media #{$screen-xxl} {} //.COL-XXL
+
+    .elementor-widget-button {
+        // GLOBAL
+            width: $grid-12;
+            margin: $margin-xxs auto;
+
+        // MOBILE
+            @media #{$screen-xs} {} //.COL-XS
+            @media #{$screen-sm} {} //.COL-SM
+            @media #{$screen-md} {} //.COL-MD
+            @media #{$device-mobile} {} //.MOBILE
+
+        // DESKTOP
+            @media #{$device-desktop} {} //.DESKTOP
+            @media #{$screen-lg} {
+                width: $grid-6;
+                display: flex;
+                justify-content: flex-start;
+                margin: $margin-sm $margin-none;
+
+                &:first-child {
+                    padding-right: $padding-xxs;
+                } //:FIRST-CHILD
+
+                &:last-child {
+                    padding-left: $padding-xxs;
+                } //:LAST-CHILD
+            } //.COL-LG
+            @media #{$screen-xl} {
+                width: $grid-6;
+            } //.COL-XL
+            @media #{$screen-xxl} {
+                width: $grid-4;
+            } //.COL-XXL
+    } //.ELEMENTOR-WIDGET-BUTTON
+
+    .elementor-widget-call-to-action {
+        // GLOBAL
+            margin: $margin-xs $margin-none;
+            
+        // MOBILE
+            @media #{$screen-xs} {} //.COL-XS
+            @media #{$screen-sm} {} //.COL-SM
+            @media #{$screen-md} {} //.COL-MD
+            @media #{$device-mobile} {} //.MOBILE
+
+        // DESKTOP
+            @media #{$device-desktop} {} //.DESKTOP
+            @media #{$screen-lg} {} //.COL-LG
+            @media #{$screen-xl} {} //.COL-XL
+            @media #{$screen-xxl} {} //.COL-XXL
+    } //.ELEMENTOR-WIDGET-CALL-TO-ACTION
+
+} //#RANKINGS

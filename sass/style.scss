@@ -135,6 +135,19 @@
             // @IMPORT | FILES
                 @import "objects/gradients";
 
+        // SECTIONS
+            // SETTINGS
+                $section-padding-xs: $padding-md;
+                $section-padding-sm: $padding-md;
+                $section-padding-md: $padding-lg;
+                $section-padding-lg: $padding-lg;
+                $section-padding-xl: $padding-lg;
+                $section-padding-xxl: $padding-xxl;
+                $section-background-color: $color-scgolfpanel-beige-0;
+
+            // @IMPORT | FILES
+                @import "objects/sections";
+
 // EXTERNAL SETTINGS
     // BOOTSTRAP
         // SETTINGS
@@ -169,5 +182,13 @@
 
     // BANNERS
         // SETTINGS
+            $banner-image-height: 60vh;
+
         // @IMPORT | FILES
             @import "parts/banners/main";
+
+// PAGES
+    // INDEX
+        // SETTINGS
+        // @IMPORT | FILES
+            @import "pages/index";

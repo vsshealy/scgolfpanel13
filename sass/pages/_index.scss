@@ -20,5 +20,24 @@ body#index {
         @media #{$screen-xl} {} //.COL-XL
         @media #{$screen-xxl} {} //.COL-XXL
 
+    #mission {
+        // GLOBAL
+            border-top: none;
+
+        // MOBILE
+            @media #{$screen-xs} {} //.COL-XS
+            @media #{$screen-sm} {} //.COL-SM
+            @media #{$screen-md} {} //.COL-MD
+            @media #{$device-mobile} {} //.MOBILE
+
+        // DESKTOP
+            @media #{$device-desktop} {} //.DESKTOP
+            @media #{$screen-lg} {} //.COL-LG
+            @media #{$screen-xl} {} //.COL-XL
+            @media #{$screen-xxl} {} //.COL-XXL
+    } //#MISSION
+
     // @IMPORT | FILES
+        @import "sections/rankings";
+        
 } //#INDEX

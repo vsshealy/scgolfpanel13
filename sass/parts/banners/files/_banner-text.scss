@@ -54,28 +54,34 @@
 
         .wrapper-content {
             // GLOBAL
-                padding-top: $padding-md;
-                padding-bottom: $padding-md;
-
             // MOBILE
-                @media #{$screen-xs} {} //.COL-XS
-                @media #{$screen-sm} {} //.COL-SM
+                @media #{$screen-xs} {
+                    padding-top: $section-padding-xs;
+                    padding-bottom: $section-padding-xs;
+                } //.COL-XS
+                @media #{$screen-sm} {
+                    padding-top: $section-padding-sm;
+                    padding-bottom: $section-padding-sm;
+                } //.COL-SM
                 @media #{$screen-md} {
-                    padding-top: $padding-lg;
-                    padding-bottom: $padding-lg;
+                    padding-top: $section-padding-md;
+                    padding-bottom: $section-padding-md;
                 } //.COL-MD
                 @media #{$device-mobile} {} //.MOBILE
 
             // DESKTOP
                 @media #{$device-desktop} {} //.DESKTOP
                 @media #{$screen-lg} {
-                    padding-top: $padding-xl;
-                    padding-bottom: $padding-xl;
+                    padding-top: $section-padding-lg;
+                    padding-bottom: $section-padding-lg;
                 } //.COL-LG
-                @media #{$screen-xl} {} //.COL-XL
+                @media #{$screen-xl} {
+                    padding-top: $section-padding-xl;
+                    padding-bottom: $section-padding-xl;
+                } //.COL-XL
                 @media #{$screen-xxl} {
-                    padding-top: $padding-xxl;
-                    padding-bottom: $padding-xxl;
+                    padding-top: $section-padding-xxl;
+                    padding-bottom: $section-padding-xxl;
                 } //.COL-XXL
 
             & > .elementor-widget-wrap {
@@ -149,6 +155,7 @@
             font-weight: 300;
             text-align: center;
             color: $color-grayscale-light-12;
+            margin: $margin-none;
 
         // MOBILE
             @media #{$screen-xs} {} //.COL-XS

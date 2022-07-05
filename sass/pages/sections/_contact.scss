@@ -1,12 +1,12 @@
 /**
- * sass/parts/banners/main.scss
+ * sass/pages/sections/contact.scss
  * @package scgolfpanel
  * @author Scott Shealy
  * @version 1.0.0
  * @copyright 2022
 **/
 
-.banner {
+section#contact {
     // GLOBAL
     // MOBILE
         @media #{$screen-xs} {} //.COL-XS
@@ -19,9 +19,4 @@
         @media #{$screen-lg} {} //.COL-LG
         @media #{$screen-xl} {} //.COL-XL
         @media #{$screen-xxl} {} //.COL-XXL
-
-    // @IMPORT | FILES
-        @import "files/banner-image";
-        @import "files/banner-text";
-        
-} //.BANNER
+} //#CONTACT
